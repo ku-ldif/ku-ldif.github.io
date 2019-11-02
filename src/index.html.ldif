@@ -1,0 +1,233 @@
+dn: o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlFile
+
+dn: ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: html
+htmlAttrLang: ja
+
+# header
+dn: ou=head,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: head
+htmlNthChild: 1
+
+dn: ou=title,ou=head,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: title
+
+dn: cn=text,ou=title,ou=head,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 京都大学 LDIF 同好会
+
+# body
+dn: ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: body
+htmlNthChild: 2
+
+## H1 title
+dn: ou=title,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: h1
+htmlNthChild: 1
+
+dn: cn=text,ou=title,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 京都大学 LDIF 同好会
+
+## Tweet button
+dn: ou=twitter_link,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlNthChild: 2
+htmlAttrHref: https://twitter.com/intent/tweet
+htmlAttrClass: twitter-share-button
+
+## Description
+dn: ou=description_title,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: h2
+htmlNthChild: 3
+
+dn: cn=text,ou=description_title,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 京都大学 LDIF 同好会とは？
+
+dn: ou=description,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 4
+
+dn: cn=text,ou=description,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 京都大学 LDIF 同好会とは、 
+htmlNthChild: 1
+
+dn: ou=ldif_link,ou=description,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlNthChild: 2
+htmlAttrHref: https://tools.ietf.org/html/rfc2849
+
+dn: cn=content,ou=ldif_link,ou=description,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: LDIF
+
+dn: cn=text2,ou=description,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+# base64 encoded " が好きな人間が集まる同好会です。"
+htmlTextValue:: IOOBjOWlveOBjeOBquS6uumWk+OBjOmbhuOBvuOCi+WQjOWlveS8muOBp+OBmeOAgg==
+htmlNthChild: 3
+
+# Activities
+
+dn: ou=activities_title,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: h2
+htmlNthChild: 4
+
+dn: cn=text,ou=activities_title,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 活動内容例
+
+dn: ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: ul
+htmlNthChild: 5
+
+## Activities 1 - Create LDIF files
+
+dn: ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: li
+htmlNthChild: 1
+
+dn: ou=title,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 1
+
+dn: cn=text,ou=title,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: LDIF ファイルを作成する
+
+dn: ou=description,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 2
+
+dn: cn=text,ou=description,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: このページの HTML 文書も、 
+htmlNthChild: 1
+
+dn: ou=ldif_gh_link,ou=description,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlNthChild: 2
+htmlAttrHref: https://github.com/ku-ldif/ku-ldif.github.io/blob/master/src/index.html.ldif
+
+dn: cn=content,ou=ldif_gh_link,ou=description,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: LDIF ファイル
+
+dn: cn=text2,ou=description,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+# base64 encoded " から "
+htmlTextValue:: IOOBi+OCiSA=
+htmlNthChild: 3
+
+dn: ou=ldap2html_link,ou=description,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlNthChild: 4
+htmlAttrHref: https://github.com/nonylene/ldap2html/tree/master/ldap2html
+
+dn: cn=content,ou=ldap2html_link,ou=description,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: ldap2html
+
+dn: cn=text3,ou=description,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+# base64 encoded " を用いて生成されています！"
+htmlTextValue:: IOOCkueUqOOBhOOBpueUn+aIkOOBleOCjOOBpuOBhOOBvuOBme+8gQ==
+htmlNthChild: 5
+
+## Activities 2 - dream
+
+dn: ou=activities_dream,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: li
+htmlNthChild: 2
+
+dn: ou=title,ou=activities_dream,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 1
+
+dn: cn=text,ou=title,ou=activities_dream,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: LDIF に関する夢を見る
+
+# Links
+
+dn: ou=links,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: h2
+htmlNthChild: 6
+
+dn: cn=text,ou=links,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 関連リンク
+
+dn: ou=links_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: ul
+htmlNthChild: 7
+
+## Links 1 - GitHub
+
+dn: ou=org,ou=links_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: li
+htmlNthChild: 1
+
+dn: ou=title,ou=org,ou=links_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+
+dn: ou=org_link,ou=title,ou=org,ou=links_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlAttrHref: https://github.com/ku-ldif
+
+dn: cn=text,ou=org_link,ou=title,ou=org,ou=links_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: GitHub organization
+
+## Script for Tweet button
+dn: ou=twitter_script,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: script
+# last
+htmlNthChild: 100
+
+dn: cn=content,ou=twitter_script,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: window.twttr = (function(d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0],
+     t = window.twttr || {};
+   if (d.getElementById(id)) return t;
+   js = d.createElement(s);
+   js.id = id;
+   js.src = "https://platform.twitter.com/widgets.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ 
+   t._e = [];
+   t.ready = function(f) {
+     t._e.push(f);
+   };
+ 
+   return t;
+ }(document, "script", "twitter-wjs"));
