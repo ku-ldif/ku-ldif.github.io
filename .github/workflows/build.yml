@@ -24,9 +24,9 @@ jobs:
       - run: pip3 install pipenv
       - run: pip install pipenv
       - run: |
-        ls -alh
-        which pipenv
-        ls tmp/ldap2html
+          ls -alh
+          which pipenv
+          ls tmp/ldap2html
       - run: pipenv install
         working-directory: ./tmp/ldap2html
 
