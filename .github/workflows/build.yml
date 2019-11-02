@@ -31,7 +31,7 @@ jobs:
 
       - run: docker ps
       - run: docker inspect ldap
-      - run: docker exec ldap lsof -i:389
+      - run: docker exec ldap ps auxwwf
       - name: Add ldap entries
         run: |
           set -ex
