@@ -15,6 +15,7 @@ jobs:
       - uses: actions/checkout@v1
         with:
           repository: nonylene/ldap2html
+          ref: refs/heads/master
           path: ./tmp/ldap2html
       - name: Set up Python 3.7
         uses: actions/setup-python@v1
