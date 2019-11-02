@@ -33,6 +33,7 @@ jobs:
       - run: docker inspect ldap
       - name: Add ldap entries
         run: |
+          set -ex
           for f in src/*.html.ldif; do
             docker exec ldap ldapadd -x -H ldap://localhost -D "cn=admin,dc=ku-ldif,dc=github,dc=io" -w admin  -f /repo/$f
           done
