@@ -31,11 +31,12 @@ jobs:
 
       - run: docker ps
       - run: docker inspect ldap
+      - run: docker exec ldap lsof -p 389
       - name: Add ldap entries
         run: |
           set -ex
           for f in src/*.html.ldif; do
-            docker exec ldap ldapadd -x -H ldap://localhost -D "cn=admin,dc=ku-ldif,dc=github,dc=io" -w admin  -f /repo/$f
+            docker exec ldap ldapadd -x -H ldap:// -D "cn=admin,dc=ku-ldif,dc=github,dc=io" -w admin  -f /repo/$f
           done
       - name: Generate html files
         run: pipenv run python3 main.py -H ldap://localhost -b 'dc=ku-ldif,dc=github,dc=io' -D 'cn=admin,dc=ku-ldif,dc=github,dc=io' -w admin -v
