@@ -15,18 +15,18 @@ jobs:
       - uses: actions/checkout@v1
         with:
           repository: nonylene/ldap2html
-          path: /tmp/ldap2html
+          path: ./tmp/ldap2html
       - name: Set up Python 3.7
         uses: actions/setup-python@v1
         with:
           python-version: 3.7
       - run: pip3 install pipenv
       - run: pipenv install
-        working-directory: /tmp/ldap2html
+        working-directory: ./tmp/ldap2html
 
       # Setup ldap
       - name: Run OpenLDAP background
-        run: docker run -p 389:389 -p 636:636 -v ${GITHUB_WORKSPACE}:/repo -v /tmp/ldap2html/schema:/container/service/slapd/assets/config/bootstrap/ldif/custom --rm -d --env LDAP_DOMAIN="ku-ldif.github.io" --name ldap osixia/openldap --copy-service
+        run: docker run -p 389:389 -p 636:636 -v ${GITHUB_WORKSPACE}:/repo -v ${GITHUB_WORKSPACE}/tmp/ldap2html/schema:/container/service/slapd/assets/config/bootstrap/ldif/custom --rm -d --env LDAP_DOMAIN="ku-ldif.github.io" --name ldap osixia/openldap --copy-service
 
       - name: Add ldap entries
         run: |
@@ -35,10 +35,10 @@ jobs:
           done
       - name: Generate html files
         run: pipenv run python3 main.py -H ldap://localhost -b 'dc=ku-ldif,dc=github,dc=io' -D 'cn=admin,dc=ku-ldif,dc=github,dc=io' -w admin -v
-        working-directory: /tmp/ldap2html
+        working-directory: ./tmp/ldap2html
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
           name: out
-          path: /tmp/ldap2html/out
+          path: ./tmp/ldap2html/out
