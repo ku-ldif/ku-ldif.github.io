@@ -62,6 +62,8 @@ jobs:
       - uses: actions/download-artifact@v1
         with:
           name: out
+      - run: git status
+      - run: echo ${{ github.ref }}
       - run: ls out
       - run: ls out/*
       - run: |
