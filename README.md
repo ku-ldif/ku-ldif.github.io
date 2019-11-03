@@ -4,11 +4,13 @@ Kyoto University LDIF Daisuki Club (ja: 京都大学 LDIF 同好会) <https://ku
 
 ku-ldif.github.io uses [ldap2html](https://github.com/nonylene/ldap2html) for converting LDIF to html. See ldap2html repository for details.
 
-## Add documents
+## Guide
+
+### Add documents
 
 LDIF files (`XXX-*.html.ldif`) under the `src` directory will be passed to `ldapadd` in alphabetical order.
 
-## Modify documents
+### Modify documents
 
 **DON'T MODIFY LDIF, DO ADD NEW LDIF.**
 
