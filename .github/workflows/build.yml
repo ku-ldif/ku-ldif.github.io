@@ -35,11 +35,17 @@ jobs:
 
       - name: Add ldap entries
         run: |
-          for f in src/*.html.ldif; do
+          for f in src/*.html.ldif; do # sorted
             docker exec ldap ldapadd -x -H ldap://localhost -D "cn=admin,dc=ku-ldif,dc=github,dc=io" -w admin  -f /repo/$f
+          done
+      - name: Modify ldap entries
+        run: |
+          for f in src/modify/*.html.ldif; do # sorted
+            docker exec ldap ldapmodify -x -H ldap://localhost -D "cn=admin,dc=ku-ldif,dc=github,dc=io" -w admin  -f /repo/$f
           done
       - name: ldapsearch for debug
         run: docker exec ldap ldapsearch -x -H ldap://localhost -D "cn=admin,dc=ku-ldif,dc=github,dc=io" -b "dc=ku-ldif,dc=github,dc=io" -w admin
+
       - name: Generate html files
         run: pipenv run python3 main.py -H ldap://localhost -b 'dc=ku-ldif,dc=github,dc=io' -D 'cn=admin,dc=ku-ldif,dc=github,dc=io' -w admin -v
         working-directory: ../ldap2html
