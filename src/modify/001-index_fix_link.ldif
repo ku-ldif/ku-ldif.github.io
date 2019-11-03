@@ -1,0 +1,4 @@
+dn: ou=ldap2html_link,ou=description,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlAttrHref
+htmlAttrHref: https://github.com/nonylene/ldap2html
