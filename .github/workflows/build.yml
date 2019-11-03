@@ -46,3 +46,30 @@ jobs:
         with:
           name: out
           path: ../ldap2html/out
+
+  deploy:
+#    if: github.ref == 'refs/heads/master'
+    needs: [generate]
+    name: Deploy (push)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Setup git
+        run: |
+          git config --local user.email "ku-ldif@users.noreply.github.com"
+          git config --local user.name "ku-ldif"
+
+      - uses: actions/download-artifact@v1
+        with:
+          name: out
+      - run: |
+          mv out/*.html ./
+          rm -r out
+
+      - name: Git commit and push if diff exists
+        run: |
+          if ! git diff --quiet; then
+            git add *.html
+            git commit -m "Generate HTML documents"
+            git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/ku-ldif/ku-ldif.github.io.git github-actions
+          fi
