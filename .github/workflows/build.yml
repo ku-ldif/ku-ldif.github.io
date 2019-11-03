@@ -62,14 +62,17 @@ jobs:
       - uses: actions/download-artifact@v1
         with:
           name: out
+      - run: ls out
+      - run: ls out/*
       - run: |
           mv out/*.html ./
           rm -r out
+      - run: git diff
 
       - name: Git commit and push if diff exists
         run: |
           if ! git diff --quiet; then
             git add *.html
             git commit -m "Generate HTML documents"
-            git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/ku-ldif/ku-ldif.github.io.git github-actions
+            git push https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/ku-ldif/ku-ldif.github.io.git github-actions
           fi
