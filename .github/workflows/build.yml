@@ -71,8 +71,8 @@ jobs:
 
       - name: Git commit and push if diff exists
         run: |
-          if ! git diff --quiet; then
-            git add *.html
+          git add *.html
+          if ! git diff --staged --quiet; then
             git commit -m "Generate HTML documents"
             git push https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/ku-ldif/ku-ldif.github.io.git github-actions
           fi
