@@ -9,6 +9,7 @@ on: [push]
 jobs:
   generate:
     runs-on: ubuntu-latest
+    name: Generate HTML documents
     steps:
       - uses: actions/checkout@v1
 
@@ -50,7 +51,7 @@ jobs:
   deploy:
 #    if: github.ref == 'refs/heads/master'
     needs: [generate]
-    name: Deploy (push)
+    name: Deploy (Update repository)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -76,5 +77,5 @@ jobs:
           git add *.html
           if ! git diff --staged --quiet; then
             git commit -m "Generate HTML documents"
-            git push https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/ku-ldif/ku-ldif.github.io.git github-actions
+            git push https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/ku-ldif/ku-ldif.github.io.git HEAD:github-actions
           fi
