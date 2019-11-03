@@ -2,7 +2,10 @@
 
 name: Build
 
-on: [push]
+on:
+  push:
+    paths-ignore:
+    - '**.html'
 
 ## todo: ignore generated html files
 
@@ -49,7 +52,7 @@ jobs:
           path: ../ldap2html/out
 
   deploy:
-#    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master'
     needs: [generate]
     name: Deploy (Update repository)
     runs-on: ubuntu-latest
@@ -77,5 +80,5 @@ jobs:
           git add *.html
           if ! git diff --staged --quiet; then
             git commit -m "Generate HTML documents"
-            git push https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/ku-ldif/ku-ldif.github.io.git HEAD:github-actions
+            git push https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/ku-ldif/ku-ldif.github.io.git HEAD:master
           fi
