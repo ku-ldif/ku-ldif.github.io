@@ -8,7 +8,7 @@ This project uses [ldap2html](https://github.com/nonylene/ldap2html) for convert
 
 ### Add documents
 
-LDIF files (`XXX-*.html.ldif`) under the `src` directory will be passed to `ldapadd` in alphabetical order.
+LDIF files (`*.html.ldif`) under the `src` directory will be passed to `ldapadd`.
 
 ### Modify documents
 
@@ -16,7 +16,7 @@ LDIF files (`XXX-*.html.ldif`) under the `src` directory will be passed to `ldap
 
 If you want to modify existing docuemnts, use `ldapmodify`.
 
-LDIF files (`XXX-*.html.ldif`) under the `src/modify` directory will be passed to `ldapmodify` after all `ldapadd`s.
+LDIF files (`XXX-*.html.ldif`) under the `src/modify` directory will be passed to `ldapmodify` in alphabetical order, after all `ldapadd`s.
 
 ## License
 
