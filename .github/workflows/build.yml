@@ -30,7 +30,7 @@ jobs:
 
       # Setup OpenLDAP
       - name: Run OpenLDAP background
-        run: docker run -p 389:389 -p 636:636 -v ${GITHUB_WORKSPACE}:/repo -v ${GITHUB_WORKSPACE}/../ldap2html/schema:/container/service/slapd/assets/config/bootstrap/ldif/custom --rm --env LDAP_DOMAIN="ku-ldif.github.io" -d --name ldap osixia/openldap --copy-service
+        run: docker run -p 127.0.0.1:389:389 -v ${GITHUB_WORKSPACE}:/repo -v ${GITHUB_WORKSPACE}/../ldap2html/schema:/container/service/slapd/assets/config/bootstrap/ldif/custom --rm --env LDAP_DOMAIN="ku-ldif.github.io" -d --name ldap osixia/openldap --copy-service
       - run: sleep 10 # Wait until openldap boot
 
       - name: Add ldap entries
@@ -38,6 +38,8 @@ jobs:
           for f in src/*.html.ldif; do
             docker exec ldap ldapadd -x -H ldap://localhost -D "cn=admin,dc=ku-ldif,dc=github,dc=io" -w admin  -f /repo/$f
           done
+      - name: ldapsearch for debug
+        run: docker exec ldap ldapsearch -x -H ldap://localhost -D "cn=admin,dc=ku-ldif,dc=github,dc=io" -b "dc=ku-ldif,dc=github,dc=io" -w admin
       - name: Generate html files
         run: pipenv run python3 main.py -H ldap://localhost -b 'dc=ku-ldif,dc=github,dc=io' -D 'cn=admin,dc=ku-ldif,dc=github,dc=io' -w admin -v
         working-directory: ../ldap2html
