@@ -1,0 +1,4 @@
+dn: ou=ldif_gh_link,ou=description,ou=activities_write,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlAttrHref
+htmlAttrHref: https://github.com/ku-ldif/ku-ldif.github.io/blob/master/src/001-index.html.ldif
