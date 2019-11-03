@@ -30,7 +30,7 @@ jobs:
 
       # Setup OpenLDAP
       - name: Run OpenLDAP background
-        run: docker run -p 127.0.0.1:389:389 -v ${GITHUB_WORKSPACE}:/repo -v ${GITHUB_WORKSPACE}/../ldap2html/schema:/container/service/slapd/assets/config/bootstrap/ldif/custom --rm --env LDAP_DOMAIN="ku-ldif.github.io" -d --name ldap osixia/openldap --copy-service
+        run: docker run -p 127.0.0.1:389:389 -v ${GITHUB_WORKSPACE}:/repo -v ${GITHUB_WORKSPACE}/../ldap2html/schema:/container/service/slapd/assets/config/bootstrap/ldif/custom --rm --env LDAP_DOMAIN="ku-ldif.github.io" -d --name ldap osixia/openldap:1.3.0 --copy-service
       - run: sleep 10 # Wait until openldap boot
 
       - name: Add ldap entries
