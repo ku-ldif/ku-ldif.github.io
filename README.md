@@ -1,5 +1,7 @@
 # ku-ldif.github.io
 
+![](https://github.com/ku-ldif/ku-ldif.github.io/workflows/Build/badge.svg)
+
 Kyoto University LDIF Daisuki Club (ja: 京都大学 LDIF 同好会) <https://ku-ldif.github.io/>
 
 This project uses [ldap2html](https://github.com/nonylene/ldap2html) for converting LDIF to html.
