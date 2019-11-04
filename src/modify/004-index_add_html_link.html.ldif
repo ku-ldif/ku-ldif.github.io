@@ -1,0 +1,20 @@
+# Replace "LDIF に関する夢を見る" with "<a href...>LDIF に関する夢</a>を見る"
+dn: ou=href,ou=title,ou=activities_dream,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlAttrHref: /dreams.html
+htmlNthChild: 1
+
+dn: cn=text,ou=href,ou=title,ou=activities_dream,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlText
+htmlTextValue: LDIF に関する夢
+
+dn: cn=text,ou=title,ou=activities_dream,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlTextValue
+htmlTextValue: を見る
+-
+add: htmlNthChild
+htmlNthChild: 2
