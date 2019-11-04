@@ -1,0 +1,145 @@
+dn: o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlFile
+
+dn: ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: html
+htmlAttrLang: ja
+
+# header
+dn: ou=head,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: head
+htmlNthChild: 1
+
+dn: ou=title,ou=head,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: title
+
+dn: cn=text,ou=title,ou=head,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: LDIF Dreams
+
+# body
+dn: ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: body
+htmlNthChild: 2
+
+# H1 title
+dn: ou=title,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: h1
+htmlNthChild: 1
+
+dn: cn=text,ou=title,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: LDIF Dreams
+
+# Tweet button
+dn: ou=twitter_link,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlNthChild: 2
+htmlAttrHref: https://twitter.com/intent/tweet
+htmlAttrClass: twitter-share-button
+
+# Dreams
+dn: ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: ul
+htmlNthChild: 3
+
+## Dreams 1
+
+dn: ou=akapensensei,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: li
+htmlNthChild: 1
+
+dn: ou=title,ou=akapensensei,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 1
+
+dn: cn=text,ou=title,ou=akapensensei,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 2018/11/27
+
+dn: ou=description,ou=akapensensei,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 2
+
+dn: cn=text,ou=description,ou=akapensensei,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 16:28 准教の書いたldifを添削してた
+
+## Dreams 2
+
+dn: ou=momoshami,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: li
+htmlNthChild: 2
+
+dn: ou=title,ou=momoshami,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 1
+
+dn: cn=text,ou=title,ou=momoshami,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 2019/10/30
+
+dn: ou=description,ou=momoshami,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 2
+
+dn: cn=text,ou=description,ou=momoshami,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue:  09:49 千代田桃とldif の夢をみたけど詳細忘れた
+
+dn: ou=description2,ou=momoshami,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 3
+
+dn: cn=text,ou=description2,ou=momoshami,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue:  09:51 腕は血が出るから OctetString ではダメで独自に定義しましょうとか桃と話してた気がする
+
+dn: ou=description3,ou=momoshami,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 4
+
+dn: cn=text,ou=description3,ou=momoshami,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 10:10 頑張れシャミ子！OpenLDAP と Samba の連携は難しいぞ！
+
+## Script for Tweet button
+dn: ou=twitter_script,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: script
+# last
+htmlNthChild: 100
+
+dn: cn=content,ou=twitter_script,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: window.twttr = (function(d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0],
+     t = window.twttr || {};
+   if (d.getElementById(id)) return t;
+   js = d.createElement(s);
+   js.id = id;
+   js.src = "https://platform.twitter.com/widgets.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ 
+   t._e = [];
+   t.ready = function(f) {
+     t._e.push(f);
+   };
+ 
+   return t;
+ }(document, "script", "twitter-wjs"));
