@@ -1,13 +1,16 @@
 dn: ou=links,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
 bjectClass: htmlNormalElement
 htmlTagName: p
 htmlNthChild: 4
 
 dn: ou=top,ou=links,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
 bjectClass: htmlNormalElement
 htmlTagName: a
 htmlAttrHref: /
 
 dn: ou=text,ou=top,ou=links,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
 objectClass: htmlText
 htmlTextValue: Top
