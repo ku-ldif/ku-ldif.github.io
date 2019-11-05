@@ -6,10 +6,8 @@ htmlNthChild: 4
 dn: ou=top,ou=links,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
 bjectClass: htmlNormalElement
 htmlTagName: a
-htmlNthChild: 1
 htmlAttrHref: /
 
 dn: ou=text,ou=top,ou=links,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
 objectClass: htmlText
 htmlTextValue: Top
-htmlNthChild: 1
