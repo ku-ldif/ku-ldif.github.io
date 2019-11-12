@@ -1,0 +1,4 @@
+dn: cn=content,ou=ldif_link,ou=description,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlTextValue
+htmlTextValue: LDIF (LDAP Data Interchange Format)
