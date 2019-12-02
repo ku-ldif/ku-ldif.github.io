@@ -1,13 +1,13 @@
 # Add article info
 
-dn: cn=text_2,ou=p,ou=body,ou=html,o=20191202_ldap2html.html,dc=ku-ldif,dc=github,dc=io
+dn: cn=text_2,ou=p,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
 changetype: modify
 replace: htmlTextValue
 htmlTextValue:: IDHml6Xnm67jga7oqJjkuovjgafjgZnjgILkuqzlpKfjg57jgqTjgrPjg7Pjgq
  /jg6njg5YgQWR2ZW50IENhbGVuZGFyIDIwMTkg44Gu5pio5pel44Gu6KiY5LqL44Gv44CBIHNtaXR
  oIOOBrg==
 
-dn: ou=a_2,ou=p,ou=body,ou=html,o=20191202_ldap2html.html,dc=ku-ldif,dc=github,dc=io
+dn: ou=a_2,ou=p,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
 changetype: add
 objectClass: htmlNormalElement
 htmlNthChild: 5
@@ -15,13 +15,13 @@ ou: a_2
 htmlTagName: a
 htmlAttrHref: https://misumi3104.hatenablog.com/entry/2019/12/01/051950
 
-dn: cn=text,ou=a_2,ou=p,ou=body,ou=html,o=20191202_ldap2html.html,dc=ku-ldif,dc=github,dc=io
+dn: cn=text,ou=a_2,ou=p,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
 changetype: add
 objectClass: htmlText
 cn: text
 htmlTextValue:: 5rex5Zyz5peF6KGM6KiY
 
-dn: cn=text_3,ou=p,ou=body,ou=html,o=20191202_ldap2html.html,dc=ku-ldif,dc=github,dc=io
+dn: cn=text_3,ou=p,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
 changetype: add
 objectClass: htmlText
 htmlNthChild: 6
