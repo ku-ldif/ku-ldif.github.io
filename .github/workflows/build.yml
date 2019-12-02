@@ -24,9 +24,7 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: 3.7
-      - run: pip3 install pipenv
-      - run: pipenv install
-        working-directory: ../ldap2html
+      - run: pip3 install ldap2html
 
       # Setup OpenLDAP
       - name: Run OpenLDAP background
@@ -47,7 +45,7 @@ jobs:
         run: docker exec ldap ldapsearch -x -H ldap://localhost -D "cn=admin,dc=ku-ldif,dc=github,dc=io" -b "dc=ku-ldif,dc=github,dc=io" -w admin
 
       - name: Generate html files
-        run: pipenv run python3 main.py -H ldap://localhost -b 'dc=ku-ldif,dc=github,dc=io' -D 'cn=admin,dc=ku-ldif,dc=github,dc=io' -w admin -v
+        run: ldap2html -H ldap://localhost -b 'dc=ku-ldif,dc=github,dc=io' -D 'cn=admin,dc=ku-ldif,dc=github,dc=io' -w admin -v
         working-directory: ../ldap2html
       - run: docker stop ldap
 
