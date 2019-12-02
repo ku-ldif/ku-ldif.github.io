@@ -22,7 +22,7 @@ changetype: modify
 replace: htmlNthChild
 htmlNthChild: 39
 
-dn: ou=a,ou=p_24,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
+dn: ou=p_24,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
 changetype: modify
 replace: htmlNthChild
 htmlNthChild: 40
