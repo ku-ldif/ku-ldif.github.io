@@ -71,12 +71,12 @@ jobs:
         with:
           name: out
       - run: |
-          mv out/*.html ./
+          mv out/* ./
           rm -r out
 
       - name: Git commit and push if diff exists
         run: |
-          git add *.html
+          find . -name '*.html' | xargs git add
           if ! git diff --staged --quiet; then
             git commit -m "[auto] Generate HTML documents"
             git push https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/ku-ldif/ku-ldif.github.io.git HEAD:master
