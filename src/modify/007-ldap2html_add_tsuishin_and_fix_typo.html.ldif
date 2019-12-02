@@ -1,0 +1,39 @@
+### 追伸
+
+dn: ou=tsuishin,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlNormalElement
+htmlNthChild: 38
+htmlTagName: p
+
+dn: cn=text,ou=tsuishin,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlText
+cn: text
+# base64 encoded "追伸: ku-ldif.github.io は 「DON'T MODIFY LDIF, DO ADD NEW LDIF.」を掲げておりますが、今回は諸事情により force-push を繰り返してしまいました。同好会の皆様には大変失礼致しました。"
+htmlTextValue:: 6L+95Ly4OiBrdS1sZGlmLmdpdGh1Yi5pbyDjga8g44CMRE9OJ1QgTU9ESUZZIExESUYsIERPIEFERCBORVc
+ gTERJRi7jgI3jgpLmjrLjgZLjgabjgYrjgorjgb7jgZnjgYzjgIHku4rlm57jga/oq7jkuovmg4Xjgavjgo
+ jjgoogZm9yY2UtcHVzaCDjgpLnubDjgorov5TjgZfjgabjgZfjgb7jgYTjgb7jgZfjgZ/jgILlkIzlpb3kvJrjga
+ 7nmobmp5jjgavjga/lpKflpInlpLHnpLzoh7TjgZfjgb7jgZfjgZ/jgII=
+
+### Insert
+dn: ou=h2_6,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlNthChild
+htmlNthChild: 39
+
+dn: ou=p_24,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlNthChild
+htmlNthChild: 40
+
+### htmlNth -> htmlNthChild
+dn: cn=text,ou=code,ou=p_15,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlTextValue
+htmlTextValue: htmlNthChild
+
+dn: cn=text,ou=code,ou=p_23,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlTextValue
+htmlTextValue: htmlNthChild
