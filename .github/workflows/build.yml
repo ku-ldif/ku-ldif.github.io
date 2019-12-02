@@ -71,7 +71,8 @@ jobs:
         with:
           name: out
       - run: |
-          mv out/* ./
+          find . -path ./out -prune -o -name '*.html' -print | xargs rm
+          cp -a out/* ./
           rm -r out
 
       - name: Git commit and push if diff exists
