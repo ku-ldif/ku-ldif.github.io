@@ -26,7 +26,7 @@ LDIF files (`XXX-*.html.ldif`) under the `src/modify` directory will be passed t
 
 ### Note
 
-For now, one commit after ku-ldif's commit is needed to deploy GitHub pages ([issue](https://github.com/ku-ldif/ku-ldif.github.io/issues)).
+For now, one commit after ku-ldif's commit is needed to deploy GitHub pages ([issue](https://github.com/ku-ldif/ku-ldif.github.io/issues/2)).
 
 ## License
 
