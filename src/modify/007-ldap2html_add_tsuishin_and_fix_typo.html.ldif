@@ -1,11 +1,11 @@
-dn: ou=tsuishin,ou=body,ou=html,o=articles/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=
+dn: ou=tsuishin,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=github,dc=
  io
 changetype: add
 objectClass: htmlNormalElement
 htmlNthChild: 38
 htmlTagName: p
 
-dn: cn=text,ou=tsuishin,ou=body,ou=html,o=articles/20191202-ldap2html.html,dc=ku-ldif,dc=gi
+dn: cn=text,ou=tsuishin,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=gi
  thub,dc=io
 changetype: add
 objectClass: htmlText
@@ -17,20 +17,20 @@ htmlTextValue:: 6L+95Ly4OiBrdS1sZGlmLmdpdGh1Yi5pbyDjga8g44CMRE9OJ1QgTU9ESUZZIExE
  7nmobmp5jjgavjga/lpKflpInlpLHnpLzoh7TjgZfjgb7jgZfjgZ/jgII=
 
 ### Insert
-dn: ou=a,ou=p_24,ou=body,ou=html,o=articles/20191202-ldap2html.html,dc=ku-ldif,dc=githu
+dn: ou=a,ou=p_24,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ldif,dc=githu
 changetype: modify
 replace: htmlNthChild
 htmlNthChild: 39
 
 ### htmlNth -> htmlNthChild
-dn: cn=text,ou=code,ou=p_15,ou=body,ou=html,o=articles/20191202-ldap2html.html,dc=ku-ld
+dn: cn=text,ou=code,ou=p_15,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ld
  if,dc=github,dc=io
 changetype: modify
 replace: htmlTextValue
 htmlTextValue: htmlNthChild
 
 
-dn: cn=text,ou=code,ou=p_23,ou=body,ou=html,o=articles/20191202-ldap2html.html,dc=ku-ld
+dn: cn=text,ou=code,ou=p_23,ou=body,ou=html,o=article/20191202-ldap2html.html,dc=ku-ld
  if,dc=github,dc=io
 changetype: modify
 replace: htmlTextValue
