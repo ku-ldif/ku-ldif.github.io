@@ -1,0 +1,27 @@
+dn: ou=benkyoukai,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlNormalElement
+htmlTagName: li
+htmlNthChild: 3
+
+dn: ou=title,ou=benkyoukai,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 1
+
+dn: cn=text,ou=title,ou=benkyoukai,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlText
+htmlTextValue: 2019/12/13
+
+dn: ou=description,ou=benkyoukai,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 2
+
+dn: cn=text,ou=description,ou=benkyoukai,ou=dreams_list,ou=body,ou=html,o=dreams.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlText
+htmlTextValue: 14:23 部室で開かれた LDAP 勉強会に参加する夢を見ました（2週分あった）
