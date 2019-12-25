@@ -161,7 +161,7 @@ dn: cn=text,ou=b,ou=p_3,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=k
  u-ldif,dc=github,dc=io
 objectClass: htmlText
 cn: text
-htmlTextValue:: 44Kv44Oq44K544Oe44K544OX44Os44K844Oz44OI
+htmlTextValue:: 8J+OhOOCr+ODquOCueODnuOCueODl+ODrOOCvOODs+ODiPCfjoQ=
 
 dn: cn=text_1,ou=p_3,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-l
  dif,dc=github,dc=io
