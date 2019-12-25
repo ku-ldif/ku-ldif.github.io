@@ -53,7 +53,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: out
-          path: ../ldap2html/out
+          path: ../ldap2html/out/html
 
   deploy:
     if: github.ref == 'refs/heads/master'
