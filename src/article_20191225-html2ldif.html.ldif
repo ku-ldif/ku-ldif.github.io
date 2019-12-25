@@ -1,0 +1,336 @@
+dn: o=article/20191225-html2ldif.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlFile
+o: article/20191225-html2ldif.html
+
+dn: ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+ou: html
+htmlTagName: html
+htmlAttrLang: ja
+
+dn: ou=head,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=github,dc=
+ io
+objectClass: htmlNormalElement
+htmlNthChild: 0
+ou: head
+htmlTagName: head
+
+dn: ou=title,ou=head,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=g
+ ithub,dc=io
+objectClass: htmlNormalElement
+ou: title
+htmlTagName: title
+
+dn: cn=text,ou=title,ou=head,ou=html,o=article/20191225-html2ldif.html,dc=ku-l
+ dif,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue:: SFRNTCDjgpIgTERJRiDjgafmm7jjgY/jga7jgpIgSFRNTCDjgafmm7jjgY/jgZ
+ /jgoHjgasgaHRtbDJsZGlmIOOCkuS9nOOBo+OBnw==
+
+dn: ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=github,dc=
+ io
+objectClass: htmlNormalElement
+htmlNthChild: 1
+ou: body
+htmlTagName: body
+
+dn: ou=h1,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=gith
+ ub,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 0
+ou: h1
+htmlTagName: h1
+
+dn: cn=text,ou=h1,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif
+ ,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue:: SFRNTCDjgpIgTERJRiDjgafmm7jjgY/jga7jgpIgSFRNTCDjgafmm7jjgY/jgZ
+ /jgoHjgasgaHRtbDJsZGlmIOOCkuS9nOOBo+OBnw==
+
+dn: ou=p,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=githu
+ b,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 1
+ou: p
+htmlTagName: p
+
+dn: cn=text,ou=p,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,
+ dc=github,dc=io
+objectClass: htmlText
+htmlNthChild: 0
+cn: text
+htmlTextValue:: 44GT44Gu44Oa44O844K444GvIA==
+
+dn: ou=a,ou=p,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=
+ github,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 1
+ou: a
+htmlTagName: a
+htmlAttrHref: https://adventar.org/calendars/4788
+
+dn: cn=text,ou=a,ou=p,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-
+ ldif,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue:: 5Lqs6YO95aSn5a2mIExESUYg5ZCM5aW95LyaIEFkdmVudCBDYWxlbmRhciAyMD
+ E5
+
+dn: cn=text_1,ou=p,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldi
+ f,dc=github,dc=io
+objectClass: htmlText
+htmlNthChild: 2
+cn: text_1
+htmlTextValue:: IDI15pel55uu44Gu6KiY5LqL44Gn44GZ44CC
+
+dn: ou=p_1,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=git
+ hub,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 2
+ou: p_1
+htmlTagName: p
+
+dn: cn=text,ou=p_1,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldi
+ f,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue:: 44GT44KT44Gr44Gh44Gv44CBbm9ueWxlbmUg44Gn44GZ44CC
+
+dn: ou=p_2,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=git
+ hub,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 3
+ou: p_2
+htmlTagName: p
+
+dn: cn=text,ou=p_2,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldi
+ f,dc=github,dc=io
+objectClass: htmlText
+htmlNthChild: 0
+cn: text
+htmlTextValue:: 44Oh44Oq44O844Kv44Oq44K544Oe44K577yB5LuK5bm044KC5YWF5a6f44GX44
+ GfIExESUYg55Sf5rS744GM44Gn44GN44G+44GX44Gf44GL77yB77yf
+
+dn: ou=a,ou=p_2,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,d
+ c=github,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 1
+ou: a
+htmlTagName: a
+htmlAttrHref: https://ku-ldif.github.io/article/20191202-ldap2html.html
+
+dn: cn=text,ou=a,ou=p_2,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=k
+ u-ldif,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue:: MeaXpeOBq+e0ueS7i+OBl+OBnyBsZGFwMmh0bWw=
+
+dn: cn=text_1,ou=p_2,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-l
+ dif,dc=github,dc=io
+objectClass: htmlText
+htmlNthChild: 2
+cn: text_1
+htmlTextValue:: IOOCkuS9v+OBo+OBpiBIVE1MIOOCkuabuOOBhOOBpuOBhOOCi+iqreiAheOCgu
+ ayouWxseOBhOOCieOBo+OBl+OCg+OCi+OBqOaAneOBhOOBvuOBmeOAgg==
+
+dn: ou=p_3,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=git
+ hub,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 4
+ou: p_3
+htmlTagName: p
+
+dn: cn=text,ou=p_3,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldi
+ f,dc=github,dc=io
+objectClass: htmlText
+htmlNthChild: 0
+cn: text
+htmlTextValue:: 44Gd44KT44GqIExESUYg5aSn5aW944GN44Gq55qG44GV44KT44Gr44CB5LuK5p
+ el44Gv56eB44GL44KJ
+
+dn: ou=b,ou=p_3,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,d
+ c=github,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 1
+ou: b
+htmlTagName: b
+
+dn: cn=text,ou=b,ou=p_3,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=k
+ u-ldif,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue:: 44Kv44Oq44K544Oe44K544OX44Os44K844Oz44OI
+
+dn: cn=text_1,ou=p_3,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-l
+ dif,dc=github,dc=io
+objectClass: htmlText
+htmlNthChild: 2
+cn: text_1
+htmlTextValue:: 44GM44GC44KK44G+44GZ77yB77yB
+
+dn: ou=h2,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=gith
+ ub,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 5
+ou: h2
+htmlTagName: h2
+
+dn: cn=text,ou=h2,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif
+ ,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue: html2ldif
+
+dn: ou=p_4,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=git
+ hub,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 6
+ou: p_4
+htmlTagName: p
+
+dn: cn=text,ou=p_4,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldi
+ f,dc=github,dc=io
+objectClass: htmlText
+htmlNthChild: 0
+cn: text
+htmlTextValue:: 5YWI56iLIA==
+
+dn: ou=a,ou=p_4,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,d
+ c=github,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 1
+ou: a
+htmlTagName: a
+htmlAttrHref: https://github.com/nonylene/ldap2html
+
+dn: cn=text,ou=a,ou=p_4,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=k
+ u-ldif,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue: ldap2html
+
+dn: cn=text_1,ou=p_4,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-l
+ dif,dc=github,dc=io
+objectClass: htmlText
+htmlNthChild: 2
+cn: text_1
+htmlTextValue:: IOOCkuOCouODg+ODl+ODh+ODvOODiOOBl+OBpuaWsOOBl+OBhOOCs+ODnuODs+
+ ODieOCkui/veWKoOOBl+OBvuOBl+OBn++8gQ==
+
+dn: ou=p_5,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=git
+ hub,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 7
+ou: p_5
+htmlTagName: p
+
+dn: cn=text,ou=p_5,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldi
+ f,dc=github,dc=io
+objectClass: htmlText
+htmlNthChild: 0
+cn: text
+htmlTextValue:: 44Gd44Gu5ZCN44KC
+
+dn: ou=b,ou=p_5,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,d
+ c=github,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 1
+ou: b
+htmlTagName: b
+
+dn: cn=text,ou=b,ou=p_5,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=k
+ u-ldif,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue: html2ldif
+
+dn: cn=text_1,ou=p_5,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-l
+ dif,dc=github,dc=io
+objectClass: htmlText
+htmlNthChild: 2
+cn: text_1
+htmlTextValue:: 77yB44GT44Gu44Kz44Oe44Oz44OJ44KS5L2/44GG44Go44CBSFRNTCDjgYvjgo
+ kgSFRNTCDjgavlpInmj5vjgZXjgozjgosgTERJRiDjgavlpInmj5vjgZnjgovjgZPjgajjgYzjgaf
+ jgY3jgb7jgZnvvIE=
+
+dn: ou=pre,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=git
+ hub,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 8
+ou: pre
+htmlTagName: pre
+
+dn: ou=code,ou=pre,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldi
+ f,dc=github,dc=io
+objectClass: htmlNormalElement
+ou: code
+htmlTagName: code
+
+dn: cn=text,ou=code,ou=pre,ou=body,ou=html,o=article/20191225-html2ldif.html,d
+ c=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue:: JCBodG1sMmxkaWYgLW4gZXhhbXBsZS5jb20gc2FtcGxlL2hlbGxvd29ybGQuaH
+ RtbArvvIhvdXQvbGRpZi9leGFtcGxlLmNvbS9oZWxsb3dvcmxkLmh0bWwubGRpZiDjgYzlh7rlipv
+ jgZXjgozjgovvvIk=
+
+dn: ou=p_6,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=git
+ hub,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 9
+ou: p_6
+htmlTagName: p
+
+dn: cn=text,ou=p_6,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldi
+ f,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue:: aHRtbDJsZGlmIOOBq+OBr+OAgeiHquWLleOBpyBkbiDjgpLkvZzjgaPjgabjgY
+ /jgozjgZ/jgoogYmFzZTY0IOOCqOODs+OCs+ODvOODieOBl+OBn+OCiuOBqOOAgSBIVE1MIOeUqCB
+ MRElGIOOCkuabuOOBj+OBn+OCgeOBq+anmOOAheOBquS+v+WIqeOBquapn+iDveOBjOOBguOCiuOB
+ vuOBmeOAguOBneOBruS4iuOAgeOBk+OBoeOCieOBr+WLleOBi+OBmeOBruOBqyBMREFQIOOCteODv
+ OODkOODvOOBjOS4jeimgeOBquOBruOBp+OBiuaJi+i7veOBp+OBme+8gQ==
+
+dn: ou=p_7,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=git
+ hub,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 10
+ou: p_7
+htmlTagName: p
+
+dn: cn=text,ou=p_7,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldi
+ f,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue:: 5a6f44GvMeaXpeOBruiomOS6i+OCguOBk+OBriBodG1sMmxkaWYg44KS55So44
+ GE44Gm5L2c5oiQ44GV44KM44Gm44GE44G+44GX44Gf44CC55qG44GV44KT44KCIGh0bWwybGRpZiD
+ jgpLkvb/jgaPjgabjganjgpPjganjgpMgTERJRiDjgpLnlJ/miJDjgZfjgabjgYTjgY3jgb7jgZfj
+ gofjgYbvvIE=
+
+dn: ou=footer,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldif,dc=
+ github,dc=io
+objectClass: htmlNormalElement
+htmlNthChild: 11
+ou: footer
+htmlTagName: footer
+
+dn: ou=p,ou=footer,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=ku-ldi
+ f,dc=github,dc=io
+objectClass: htmlNormalElement
+ou: p
+htmlTagName: p
+
+dn: ou=a,ou=p,ou=footer,ou=body,ou=html,o=article/20191225-html2ldif.html,dc=k
+ u-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+ou: a
+htmlTagName: a
+htmlAttrHref: /
+
+dn: cn=text,ou=a,ou=p,ou=footer,ou=body,ou=html,o=article/20191225-html2ldif.h
+ tml,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+cn: text
+htmlTextValue: Top
