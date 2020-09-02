@@ -1,0 +1,13 @@
+dn: ou=activities_sorame,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: li
+htmlNthChild: 3
+
+dn: ou=title,ou=activities_sorame,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 1
+
+dn: cn=text,ou=title,ou=activities_sorame,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: Ipadと書かれたiPadをldapに空目する。
