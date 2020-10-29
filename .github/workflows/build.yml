@@ -66,6 +66,7 @@ jobs:
         run: |
           git config --local user.email "ku-ldif@users.noreply.github.com"
           git config --local user.name "ku-ldif"
+          git checkout -b gh-pages
 
       - uses: actions/download-artifact@v1
         with:
@@ -80,5 +81,5 @@ jobs:
           find . -name '*.html' | xargs git add
           if ! git diff --staged --quiet; then
             git commit -m "[auto] Generate HTML documents"
-            git push https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/ku-ldif/ku-ldif.github.io.git HEAD:master
+            git push https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/ku-ldif/ku-ldif.github.io.git HEAD:gh-pages
           fi
