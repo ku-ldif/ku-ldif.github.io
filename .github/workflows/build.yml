@@ -67,7 +67,7 @@ jobs:
           git config --local user.email "ku-ldif@users.noreply.github.com"
           git config --local user.name "ku-ldif"
           git fetch origin gh-pages
-          git checkout -b gh-pages
+          git checkout -b gh-pages origin/gh-pages
 
       - uses: actions/download-artifact@v1
         with:
