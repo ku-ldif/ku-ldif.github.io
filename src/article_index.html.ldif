@@ -1,0 +1,132 @@
+dn: o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlFile
+
+dn: ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: html
+htmlAttrLang: ja
+
+# header
+dn: ou=head,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: head
+htmlNthChild: 1
+
+dn: ou=title,ou=head,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: title
+
+dn: cn=text,ou=title,ou=head,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: Articles
+
+# body
+dn: ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: body
+htmlNthChild: 2
+
+# H1 title
+dn: ou=title,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: h1
+htmlNthChild: 1
+
+dn: cn=text,ou=title,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: Articles
+
+# Tweet button
+dn: ou=twitter_link,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlNthChild: 2
+htmlAttrHref: https://twitter.com/intent/tweet
+htmlAttrClass: twitter-share-button
+
+# Articles
+dn: ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: ul
+htmlNthChild: 3
+
+dn: ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: ul
+htmlNthChild: 1
+
+dn: ou=title,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 1
+
+dn: ou=adventer,ou=title,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlNthChild: 1
+htmlAttrHref: https://adventar.org/calendars/4163
+
+dn: cn=text,ou=adventer,ou=title,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: 京都大学 LDIF 同好会 Advent Calendar 2019
+
+dn: ou=articles,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: ul
+htmlNthChild: 2
+
+dn: ou=ldap2html,ou=articles,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: li
+htmlNthChild: 1
+
+dn: ou=a,ou=ldap2html,ou=articles,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlNthChild: 1
+htmlAttrHref: /article/20191202-ldap2html.html
+
+dn: cn=text,ou=a,ou=ldap2html,ou=articles,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: LDIF で HTML を書くために ldap2html を作った
+
+dn: ou=html2ldif,ou=articles,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: li
+htmlNthChild: 2
+
+dn: ou=a,ou=html2ldif,ou=articles,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlNthChild: 1
+htmlAttrHref: /article/20191225-html2ldif.html
+
+dn: cn=text,ou=a,ou=html2ldif,ou=articles,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: HTML を LDIF で書くのを HTML で書くために html2ldif を作った
+
+## Script for Tweet button
+dn: ou=twitter_script,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlNormalElement
+htmlTagName: script
+# last
+htmlNthChild: 100
+
+dn: cn=content,ou=twitter_script,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+objectClass: htmlText
+htmlTextValue: window.twttr = (function(d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0],
+     t = window.twttr || {};
+   if (d.getElementById(id)) return t;
+   js = d.createElement(s);
+   js.id = id;
+   js.src = "https://platform.twitter.com/widgets.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ 
+   t._e = [];
+   t.ready = function(f) {
+     t._e.push(f);
+   };
+ 
+   return t;
+ }(document, "script", "twitter-wjs"));
