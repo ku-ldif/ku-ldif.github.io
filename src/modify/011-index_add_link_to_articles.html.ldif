@@ -1,0 +1,29 @@
+dn: ou=activities_article,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlNormalElement
+htmlTagName: li
+htmlNthChild: 4
+
+dn: ou=title,ou=activities_article,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 1
+
+dn: ou=link,ou=title,ou=activities_article,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlNthChild: 1
+htmlAttrHref: /article/
+
+dn: cn=text,ou=link,ou=title,ou=activities_article,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlText
+htmlTextValue: ldapに関する記事
+
+dn: cn=follow_text,ou=title,ou=activities_article,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlText
+htmlNthChild: 2
+htmlTextValue: を書く。
