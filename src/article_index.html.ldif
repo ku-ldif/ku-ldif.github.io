@@ -52,7 +52,7 @@ htmlNthChild: 3
 
 dn: ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
 objectClass: htmlNormalElement
-htmlTagName: ul
+htmlTagName: li
 htmlNthChild: 1
 
 dn: ou=title,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
