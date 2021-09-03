@@ -1,0 +1,4 @@
+dn: ou=adventer,ou=title,ou=advent,ou=articles_list,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlAttrHref
+htmlAttrHref: https://adventar.org/calendars/4788
