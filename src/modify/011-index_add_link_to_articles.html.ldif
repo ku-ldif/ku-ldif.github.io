@@ -25,6 +25,6 @@ htmlTextValue: ldapに関する記事
 dn: cn=follow_text,ou=title,ou=activities_article,ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
 changetype: add
 objectClass: htmlText
-htmlNthChild: 1
+htmlNthChild: 2
 htmlTextValue: を書く。
 
