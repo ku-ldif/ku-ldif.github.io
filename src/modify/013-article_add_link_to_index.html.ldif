@@ -1,0 +1,16 @@
+dn: ou=top_link,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlNormalElement
+htmlTagName: p
+htmlNthChild: 95
+
+dn: ou=top,ou=top_link,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlNormalElement
+htmlTagName: a
+htmlAttrHref: /
+
+dn: cn=text,ou=top,ou=top_link,ou=body,ou=html,o=article/index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlText
+htmlTextValue: Top
