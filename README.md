@@ -1,5 +1,7 @@
 # ku-ldif.github.io
 
+test
+
 ![Status badge](https://github.com/ku-ldif/ku-ldif.github.io/workflows/Build/badge.svg)
 
 Kyoto University LDIF Daisuki Club (ja: 京都大学 LDIF 同好会) <https://ku-ldif.github.io/>
