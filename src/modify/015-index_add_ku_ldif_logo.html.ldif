@@ -1,0 +1,75 @@
+# Insert logo just after title
+
+dn: ou=ku-ldif-logo,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: add
+objectClass: htmlVoidElement
+htmlTagName: img
+ou: ku-ldif-logo
+htmlNthChild: 2
+htmlAttrSrc: data:image/png;base64,
+ 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
+ hyijxgAAAABJRU5ErkJggg==
+htmlAttrAlt: ku-ldif logo
+htmlAttrWidth: 128
+
+dn: ou=twitter_link,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlNthChild
+htmlNthChild: 3
+
+dn: ou=description_title,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlNthChild
+htmlNthChild: 4
+
+dn: ou=activities_title,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlNthChild
+htmlNthChild: 5
+
+dn: ou=activities_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlNthChild
+htmlNthChild: 6
+
+dn: ou=links,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlNthChild
+htmlNthChild: 7
+
+dn: ou=links_list,ou=body,ou=html,o=index.html,dc=ku-ldif,dc=github,dc=io
+changetype: modify
+replace: htmlNthChild
+htmlNthChild: 8
